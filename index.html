@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="c-body">
+            <div class="c-minputs">
+                <input id="intop" type="number" class="topin inbox" disabled>
+                <input id="inbottom" type="number" class="bottomin inbox" placeholder="Enter Number">
+            </div>
+            <div class="c-row">
+                <div class="c-num">
+
+                </div>
+                <div class="c-operator">
+                    <span class="numb" id="numidplus" onclick="set_data('plus')">+</span>
+                    <span class="numb" id="numidminus" onclick="set_data('minus')">-</span>
+                    <span class="numb" id="numiddiv" onclick="set_data('divi')">/</span>
+                    <span class="numb" id="numidmul" onclick="set_data('mul')">*</span>
+                    <span class="numb" id="numidans" onclick="set_answer('answer')">=</span>
+                    <span class="numb" id="numidclr" onclick="set_data('clr')">Clear</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js.js"></script>
+</body>
+
+</html>
